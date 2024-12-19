@@ -1,0 +1,109 @@
+[
+    {
+        "id": 1,
+        "image": "./images/product1.png", 
+        "price": 89,
+        "star": 5,
+        "title":"razer kraken tournamen edition THX 7.1 surriund sound gaming headset:retractable noice cancelling mic - USD DAC - for PC, PS5, nintendo switch xbox one, xbox series X & S, MOBILE -BLACK"
+    },
+    {
+        "id": 2,
+        "image": "./images/product2.png", 
+        "price": 659.59,
+        "star": 4,
+        "title":"lenovo - 2021 - ideapad 3 - gaming laptop - AMD ryzen 5 56600H - 8GB RAM - 256GB strong - NVIDIA geforce GX 1650-15.6 fhd DISPLAY - WINDOWS 11 hom"
+    },
+    {
+        "id": 3,
+        "image": "./images/product3.png", 
+        "price": 549,
+        "star": 4,
+        "title": "fujisu scansnap  ix 1600 wireless or USB high-speed cloud enabled document, photo  receipt scanner with large touchscreen and autu document feeder for mac or PC white" 
+    },
+    {
+        "id": 4,
+        "image": "./images/product4.png", 
+        "price": 229,
+        "star": 5,
+        "title": "meta quest 2 - advanced all-in-one  virtual reality headset - 128 GB" 
+    },
+    {
+        "id": 5,
+        "image": "./images/product5.png", 
+        "price": 249,
+        "star": 5,
+        "title":"mele PCG02 fanless mini PC stick windows 11 pro j4125 8GB/128GB portable mini destop computer stick business & home video support HDML 4k 60Hz BT4.2, 2.4G/5.8G dual band wi-fi USB, ethernet,"
+    },
+    {
+        "id": 6,
+        "image": "./images/product6.png", 
+        "price": 279,
+        "star": 3,
+        "title":"SAMSUNG GALAXY 522 ultra call phone, factory unlocked android smartphone, 128GB, 8K camera & video brightest display screen, s pen long battery life, fast 4nm processor, US version, phantom black"
+    },
+    {
+        "id": 7,
+        "image": "./images/product7.jpg", 
+        "price": 329,
+        "star": 5,
+        "title":"wireless bluetooth eadset 5.3 compatible with iphone and android premium line AGOLD FN BT10 magnetic case (WHITH)"
+
+    },
+    {
+        "id": 8,
+        "image": "./images/product8.jpg", 
+        "price": 11500,
+        "star": 5,
+        "title": "elite 10 true wireless earbuds-advanced whith dolby atmos surround sound-all-day"
+    },
+    {
+        "id": 9,
+        "image": "./images/product9.jpg", 
+        "price": 249,
+        "star": 4,
+        "title": "laptop backpack, slim lamtop backpack with USB charging port lock travel laptop backpack, water resistance laptop"
+    },
+    {
+        "id" :10 ,
+        "image": "./images/product10.jpg", 
+        "price": 1999,
+        "star": 5,
+        "title": "smart camera C200 1080p with 360 view, al human detection, two-way audio, night vision, google assistant & alexa"
+    },
+    {
+        "id": 11, 
+        "image": "./images/product11.jpg", 
+        "price": 40000,
+        "star": 4,
+        "title":"T800 ultra field communicacation smart watch, bluetooth, wirless charging for sport, orange " 
+    },
+    {
+        "id": 12,
+        "image": "./images/product12.jpg", 
+        "price": 450,
+        "star": 3,
+        "title":"rubber sport band compatible with apple watch series ultra 2 | 9 | ultra | 8 |7 |6 |5 |49 / 45 / 44 / 42 mm, premium" 
+    },
+    {
+        "id": 13,
+        "image": "./images/product13.jpg", 
+        "price": 5500,
+        "star": 5,
+        "title": "GTS 2 (new version) smart watch with ultra HD AMOLED display, built-in amazon alexa, built-in gps, spo2 & stress monitor" 
+    },
+        {
+            "id": 14,
+        "image": "./images/product14.jpg", 
+        "price": 4001,
+        "star": 5,
+        "title":"fire TV stick HD, sharppicture qality, fast streaming, free & live TV, alex voice remote with TV controls" 
+    },
+  
+    {
+        "id": 16,
+        "image": "./images/product16.jpg", 
+        "price": 2450,
+        "star": 5,
+        "title":"height-adjustable velvet office study desk chair for salon, spa, bar in light pink color" 
+    }
+]

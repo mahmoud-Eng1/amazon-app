@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #f6a522 ;
+    --gray-color: #eaece1 ;
+    --logo-color: #231f20 ;
+    --background: #eaeded;
+}
+

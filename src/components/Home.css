@@ -1,0 +1,72 @@
+.content {
+    box-shadow: 0 0 6px gray;
+    border-radius: 7px;
+    margin: 20px 0 !important;
+    
+    gap: 10px;
+    
+}
+
+.imgeHome img {
+    width: 100%;
+    position: relative;
+    height: 87vh;
+    top: 78px;
+}
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 122px auto !important;
+}
+.content {
+    width: 32%;
+}
+
+.imageContent img {
+    width: 100%;
+    height: 200px;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+.infoHome {
+    padding: 5px;
+}
+.price {
+    margin: 10px 0 !important;
+}
+
+.imageContent:hover img{
+    border-radius: 7px;
+    transform: scale(.95);
+}
+.parentStars {
+    display: flex;
+    margin-bottom: 15px !important;
+}
+.rating img {
+    width: 20px;
+    margin: 4px;
+}
+@media(max-width: 768px) {
+    .content {
+        width: 170px;
+    }
+    .category {
+        font-size: 13px !important
+    }
+    .imageContent img {
+        height: 150px;
+    }
+}
+@media(max-width:576px) {
+    .parent {
+        justify-content: space-around;
+    }
+    .content {
+        width: 250px;
+    }
+    .category {
+        font-size: 14px !important;
+    }
+}

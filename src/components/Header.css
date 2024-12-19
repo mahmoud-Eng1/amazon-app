@@ -1,0 +1,119 @@
+
+.appbar {
+    background-color: var(--logo-color )!important;
+}
+.logo {
+    width: 150px;
+}
+.search {
+    width: 90%;
+    padding: 0 10px !important;
+    background-color: #fff;
+    height: 30px;
+    border: none;
+    
+}
+
+.links {
+padding: 7px;
+color: inherit;
+text-decoration: none;
+margin: 0 10px;
+}
+.check {
+    cursor: pointer;
+    color: inherit;
+}
+.iconsearch {
+    background-color: var(--main-color);
+    position: absolute;
+    right: 60px;
+    
+    height: 30px !important;
+}
+.hello {
+    font-size: 12px !important;
+}
+.count {
+    width: 17px !important;
+    height: 17px !important;
+    background-color: var(--main-color);
+    position: absolute;
+    border-radius: 50%;
+    color: #000;
+    text-align: center;
+    font-size: 12px !important;
+}
+.nameUser {
+    background-color: var(--main-color);
+    width: 55px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: capitalize;
+}
+@media(max-width: 992px) {
+    .iconsearch {
+        right: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .links {
+        font-size: 15px !important;
+        padding-top: 0;
+    }
+    .hello {
+        font-size: 10px !important;
+    }
+    .iconsearch {
+        right: 12px;
+    }
+    .logo {
+        width: 120px;
+    }
+    .imgeHome img {
+        top: 70px !important;
+    }
+}
+@media (max-width: 576px) {
+    .links {
+        font-size: 11px !important;
+        padding-top: 0;
+    }
+    .hello {
+        font-size: 10px !important;
+    }
+    .iconsearch {
+        right: 10px;
+    }
+    .logo {
+        width: 77px;
+    }
+    .nameUser {
+        width: 39px;
+        height: 25px;
+        text-align: center;
+        padding: 0;
+    
+    }
+    .shopingCart {
+        font-size: 15px !important;
+    }
+    .count {
+        width: 14px !important;
+        height: 14px !important;
+    }
+    .search {
+        height: 26px;
+
+    }
+    .search::placeholder {
+        font-size: 12px;
+    }
+    .iconsearch {
+        height: 26px !important;
+    }
+    .imgeHome img {
+        top: 49px !important;
+    }
+}
