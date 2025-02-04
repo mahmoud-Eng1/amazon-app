@@ -27,8 +27,9 @@ function Payment() {
   }, [address, phone, phoneWhats, email])
   function handleData(e) {
     e.preventDefault();
-    if(refAddress.current.value|| refPhone.current.value || refPhoneWhats.current.value || reEmail.current.value === ""){
-      prompt("enter your data")
+    if(refAddress.current.value && refPhone.current.value && refPhoneWhats.current.value && reEmail.current.value === ""){
+      alert("enter your data")
+      
       
     }else{
       setAddress(refAddress.current.value);
