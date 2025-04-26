@@ -1,6 +1,7 @@
+
 export const getTotalBasket = (basket)=> 
     basket.reduce((amount, item)=>{
-        return amount + item.price
+        return amount + item.price * item.quantity
     }, 0)
 
 
@@ -15,19 +16,37 @@ switch(action.type) {
     case "SET_USER":
         return{
             ...state,
-            user: action.user
+            user: action.user,
         }
-        case "empty_basket":
+        case "EMPTY_BASKET":
             return{
                 ...state,
                 basket: []
             }
         // this cace add items in basket
         case "ADD_TO_BASKET":
-            return{
-                ...state, 
-                basket: [...state.basket, action.item],
+            //check if element exist in basket or not
+
+            const existitem = state.basket.find((item)=> item.id === action.item.id)
+            // if element exist increment the quantity
+            if(existitem){
+                return{
+                    ...state,
+                    basket: state.basket.map((item)=> item.id === action.item.id ?
+                    {...item,
+                        quantity: item.quantity + 1
+                    }
+                    : item
+                )
+                }
+                //if existItem empty add one element
+            }else {
+                return {
+                    ...state, 
+                    basket: [...state.basket, {...action.item, quantity: 1} ]
+                }
             }
+
             //this case remove items from basket
             case "remove_from_basket": 
             const handleIndex = state.basket.findIndex((indexItem)=> indexItem.id === action.id)
@@ -40,10 +59,7 @@ switch(action.type) {
                 basket: newBasket,
             }
         default:
-            return state
-            
-
-        
+            return state       
 }
 }
 

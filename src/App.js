@@ -1,22 +1,22 @@
-
-import {React, useEffect} from "react";
-import Header from "./components/Header";
-import Home from "./components/Home";
-import Signin from "./components/Signin";
+import Header from "./components/Header/Header.jsx";
+import Home from "./components/Home/Home.jsx";
+import Signin from "./components/Login/Signin.jsx";
+import CheckProuduct from "./components/Checproduct/CheckProuduct.jsx";
+import Payment from "./components/Payment/Payment.jsx";
+import {React, useEffect } from "react";
 import {Route, Routes}from "react-router-dom";
-import Orders from "./components/Orders";
-
-import { auth } from "./components/firebase";
+import { auth } from "./components/firebase.js";
 import { AppData } from "./context/GlobalContext";
-import CheckProuduct from "./components/CheckProuduct"
-import Payment from "./components/Payment";
+import {loadStripe} from '@stripe/stripe-js';
+import {Elements} from "@stripe/react-stripe-js"
 
-
-
+const promisStripe = loadStripe("pk_test_51Pk7DeRv7if2NQ0S69WnxUodjxx7AKZNTCVCXDOkLv6c3RU1xgxinAREGuxkXLngt7y9InH5uF1ezaZPNBtgKlP5004tYc5rAn")
 
 function App() {
-const {dispatch} = AppData()
-
+  const {dispatch} = AppData()
+  
+ 
+ 
   useEffect(()=> {
     auth.onAuthStateChanged((useUser)=> {
       if(useUser) {
@@ -33,20 +33,29 @@ const {dispatch} = AppData()
 
     })
   }, []);
+  
 
   return (
+    
     <div className="App">
-      <Header/>
+      
+      <Header />
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/Orders" element={<Orders/>} />
         <Route path="/Signin" element={<Signin/>} />
         <Route path="/CheckProuduct" element={<CheckProuduct/>} />
         
-        <Route path="/Payment" element={ <Payment/>}/>
+        <Route path="/Payment" element={
+          <>
+          <Elements stripe={promisStripe}>
+          <Payment/>
+          </Elements> 
+
+          </>
+          }/>
         
       </Routes>
-  
+      
     </div>
   );
 }

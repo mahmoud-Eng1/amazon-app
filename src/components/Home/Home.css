@@ -48,6 +48,7 @@
     width: 20px;
     margin: 4px;
 }
+
 @media(max-width: 768px) {
     .content {
         width: 170px;

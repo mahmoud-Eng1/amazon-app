@@ -1,6 +1,9 @@
 .parentPage {
     position: relative;
-    top: 78px;
+    top: 110px;
+}
+.declarationParent {
+    display: flex;
 }
 .userInfo {
     width: 85%;
@@ -38,32 +41,58 @@
 .rating {
     display: flex;
 }
+.addtion {
+    background-color: rgb(255, 136, 0);
+    padding: 5px 10px;
+}
+@media(max-width: 992px) {
+    .parentPage {
+        position: relative;
+        top: 112px;
+    }
+}
 
 @media(max-width:768px) {
-    .productInfo {
-
+    .userInfo img {
+        height: 100px;
     }
-    .btnCheck {
-
+    .parentPage {
+        position: relative;
+        top: 112px;
     }
 }
 @media(max-width:576px) {
-    .productInfo {
-
+    .parentPage {
+        position: relative;
+        top: 100px;
     }
+    .declarationParent  {
+        display: block;
+    }
+    .userInfo {
+        width: 100%;
+    }
+    .userInfo img {
+        height: 60px;
+    }
+    .productInfo {
+        width: 80% ;
+        margin: auto !important;
+    }
+
     .subtotal {
-        font-size: 10px !important;
+        font-size: 16px !important;
     }
     .value {
-        font-size: 12px;
+        font-size: 16px;
     }
     .check {
-        font-size: 11px !important;
+        font-size: 16px !important;
     }
     .checkBox svg {
         font-size: 17px;
     }
     .btnCheck {
-        font-size: 9px !important;
+        font-size: 12px !important;
     }
 }

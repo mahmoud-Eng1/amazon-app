@@ -1,0 +1,39 @@
+
+.payment {
+    position: relative;
+    top: 80px;
+}
+.paymentCheckOute {
+    text-align: center;
+    text-decoration: none;
+}
+.headerPayment {
+    background-color: #e9ecefb3;
+    padding: 10px ;
+    font-size: 20px;
+}
+.paymentForm {
+    width: 70%;
+    margin: auto;
+    border: .5px solid gray ;
+    border-radius: 10px;
+}
+.message {
+    margin: 20px;
+    padding: 20px 10px;
+    
+}
+.btnPayment {
+    margin: 20px 0;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 5px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+@media(max-width:576px) {
+    .paymentForm  {
+        width: 100%;
+    }
+}
